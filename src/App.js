@@ -9,7 +9,7 @@ function App() {
     return (
         <div className='w-50 m-auto mt-4'>
             <Form itemList={itemList} setItemList={setItemList} />
-            <Display itemList={itemList} />
+            <Display itemList={itemList} setItemList={setItemList} />
         </div>
     );
 }
