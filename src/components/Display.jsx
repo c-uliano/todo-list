@@ -28,6 +28,7 @@ const Display = (props) => {
             <h1 className='mb-4'>Get 'em Done:</h1>
             <>
     {
+        // could also do itemList?.map((newItem, idx) etc), has something to do with the state not yet existing when the map is trying to run. Just a werid state thing
         itemList && itemList.map((newItem, idx) => (
             <div key={idx} className="row mb-3 border-bottom pb-3 align-items-center">
                 <div className="form-check col-md-8">
